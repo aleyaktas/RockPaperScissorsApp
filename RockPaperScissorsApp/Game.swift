@@ -13,8 +13,9 @@ class Game: UIViewController {
 
     var timer: Timer?
     var runCount = 3
-    var score = 0
-    
+    var userScore = 0
+    var computerScore = 0
+
     var computerChoose:String = ""
     var selectedOption: String = ""
     
@@ -52,6 +53,11 @@ class Game: UIViewController {
 
     func showMessage (with message: String) {
         counter.text = message
+        if (message == "Win") {
+          userScore += 1;
+        } else if message == "Lose" {
+          computerScore += 1;
+        }
     }
 
     func checkStatus (userChoice: String)   {

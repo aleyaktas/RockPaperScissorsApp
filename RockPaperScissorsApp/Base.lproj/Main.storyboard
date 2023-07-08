@@ -30,18 +30,18 @@
                                 <rect key="frame" x="177" y="281.66666666666669" width="216" height="89"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycO-kd-ayF">
-                                <rect key="frame" x="139" y="769" width="115" height="29"/>
+                                <rect key="frame" x="119.66666666666667" y="763.66666666666663" width="153.66666666666663" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="START GAME">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <color key="strokeColor" systemColor="systemGreenColor"/>
                                     </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="14"/>
+                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="jmE-3n-4rd" kind="show" id="hR4-19-Dfk"/>
+                                    <segue destination="JpA-Fl-v5x" kind="show" id="MfN-7T-5XR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -76,10 +76,10 @@
                                 <rect key="frame" x="-10" y="222" width="413" height="408"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RockComputer" translatesAutoresizingMaskIntoConstraints="NO" id="PTw-67-hNV">
-                                <rect key="frame" x="0.0" y="103" width="393" height="257.66666666666669"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="233"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RockUser" translatesAutoresizingMaskIntoConstraints="NO" id="XEY-3L-iNH">
-                                <rect key="frame" x="0.0" y="520.66666666666663" width="393" height="297.33333333333337"/>
+                                <rect key="frame" x="0.0" y="496" width="393" height="273"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIGHT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8d-P4-QZr">
                                 <rect key="frame" x="111.00000000000001" y="397.66666666666669" width="171.33333333333337" height="56.666666666666686"/>
@@ -88,14 +88,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zjp-zx-ZvK">
-                                <rect key="frame" x="156" y="769.66666666666663" width="81" height="28.333333333333371"/>
+                                <rect key="frame" x="144" y="714.66666666666663" width="105.33333333333331" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="ChOOse">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <color key="strokeColor" systemColor="systemGreenColor"/>
                                     </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="14"/>
+                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -103,7 +103,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="PdV-f9-ubT">
-                                <rect key="frame" x="49" y="621.66666666666663" width="295" height="140"/>
+                                <rect key="frame" x="49" y="566.66666666666663" width="295" height="140"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pu-uK-6za" userLabel="rock">
                                         <rect key="frame" x="0.0" y="0.0" width="93" height="140"/>
@@ -159,7 +159,12 @@
                             <constraint firstItem="XEY-3L-iNH" firstAttribute="width" secondItem="onr-Ip-HXp" secondAttribute="width" id="r8y-U3-ER7"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Game" id="fFg-c3-Zqw"/>
+                    <tabBarItem key="tabBarItem" title="Game" image="Game" selectedImage="Game" id="9BJ-64-fqi"/>
+                    <navigationItem key="navigationItem" title="Game" id="fFg-c3-Zqw">
+                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="2SQ-Mo-Ce8">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="chooseButton" destination="Zjp-zx-ZvK" id="5bo-YS-8A5"/>
                         <outlet property="computerChooseImg" destination="PTw-67-hNV" id="MWj-2j-eKZ"/>
@@ -172,7 +177,65 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lsz-bX-qL6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3631.2977099236641" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="4918.320610687023" y="65.492957746478879"/>
+        </scene>
+        <!--Score-->
+        <scene sceneID="qyS-2D-Kdk">
+            <objects>
+                <viewController id="Ss6-45-j5L" customClass="Score" customModule="RockPaperScissorsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ap0-Ru-bKm">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Win" translatesAutoresizingMaskIntoConstraints="NO" id="w3D-7m-RBi">
+                                <rect key="frame" x="68.666666666666686" y="298" width="256" height="256"/>
+                                <color key="backgroundColor" red="0.3058823645" green="0.31372550129999999" blue="0.77254903320000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geU-Sn-g6H">
+                                <rect key="frame" x="175" y="182" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WINNER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8SL-5d-mRy">
+                                <rect key="frame" x="78" y="201" width="237" height="57"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="56"/>
+                                <color key="textColor" red="0.94509804249999996" green="0.60000002379999995" blue="0.21960783" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Score: 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fh6-J4-Rwi">
+                                <rect key="frame" x="133.33333333333334" y="594" width="126.66666666666666" height="17.333333333333371"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="18"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Computer Score: 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tuq-7o-fnh">
+                                <rect key="frame" x="111.33333333333333" y="631.33333333333337" width="170.66666666666669" height="17.333333333333371"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="t7v-hp-gXm"/>
+                        <color key="backgroundColor" red="0.32941177490000001" green="0.34509804840000002" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="w3D-7m-RBi" firstAttribute="top" secondItem="8SL-5d-mRy" secondAttribute="bottom" constant="40" id="7PX-KU-ACV"/>
+                            <constraint firstItem="fh6-J4-Rwi" firstAttribute="top" secondItem="w3D-7m-RBi" secondAttribute="bottom" constant="40" id="LF3-pr-b8A"/>
+                            <constraint firstItem="Tuq-7o-fnh" firstAttribute="centerX" secondItem="ap0-Ru-bKm" secondAttribute="centerX" id="ZvH-zU-I5j"/>
+                            <constraint firstItem="w3D-7m-RBi" firstAttribute="centerY" secondItem="ap0-Ru-bKm" secondAttribute="centerY" id="auA-va-oe6"/>
+                            <constraint firstItem="w3D-7m-RBi" firstAttribute="centerX" secondItem="ap0-Ru-bKm" secondAttribute="centerX" id="oIb-lP-9Rr"/>
+                            <constraint firstItem="8SL-5d-mRy" firstAttribute="centerX" secondItem="ap0-Ru-bKm" secondAttribute="centerX" id="oiG-xX-1JO"/>
+                            <constraint firstItem="Tuq-7o-fnh" firstAttribute="top" secondItem="fh6-J4-Rwi" secondAttribute="bottom" constant="20" id="rny-Eb-3jz"/>
+                            <constraint firstItem="fh6-J4-Rwi" firstAttribute="centerX" secondItem="ap0-Ru-bKm" secondAttribute="centerX" id="wkr-DU-t8K"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Score" image="Score" selectedImage="Score" id="TES-GE-YHf"/>
+                    <navigationItem key="navigationItem" id="Qub-ag-g7z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VYZ-k6-Csg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5483.2061068702287" y="705.63380281690149"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9hN-8i-7Rn">
@@ -192,9 +255,29 @@
             </objects>
             <point key="canvasLocation" x="1921.3740458015266" y="3.5211267605633805"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="qZF-5s-sjH">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="JpA-Fl-v5x" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Cg1-mP-ndN"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zKk-Mg-8YJ">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="jmE-3n-4rd" kind="relationship" relationship="viewControllers" id="qgL-ib-fpe"/>
+                        <segue destination="Ss6-45-j5L" kind="relationship" relationship="viewControllers" id="kgF-Ou-Mlw"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UdK-eH-65Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3991.6030534351144" y="65.492957746478879"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Background" width="413" height="408"/>
+        <image name="Game" width="24" height="24"/>
         <image name="IntroLeft" width="234" height="84"/>
         <image name="IntroRight" width="216" height="89"/>
         <image name="Paper" width="69" height="93"/>
@@ -202,6 +285,8 @@
         <image name="RockComputer" width="150" height="332"/>
         <image name="RockUser" width="142" height="327"/>
         <image name="Scissor" width="69" height="94"/>
+        <image name="Score" width="24" height="24"/>
+        <image name="Win" width="256" height="256"/>
         <systemColor name="secondarySystemGroupedBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
