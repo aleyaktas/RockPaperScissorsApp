@@ -18,6 +18,7 @@
 		A62380DA2A598FD600368359 /* RockPaperScissorsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62380D92A598FD600368359 /* RockPaperScissorsAppUITests.swift */; };
 		A62380DC2A598FD600368359 /* RockPaperScissorsAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62380DB2A598FD600368359 /* RockPaperScissorsAppUITestsLaunchTests.swift */; };
 		A62380E92A59A1DE00368359 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62380E82A59A1DE00368359 /* Game.swift */; };
+		A64C28882A5A1C300045ECAB /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64C28872A5A1C300045ECAB /* GlobalVariables.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		A62380D92A598FD600368359 /* RockPaperScissorsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsAppUITests.swift; sourceTree = "<group>"; };
 		A62380DB2A598FD600368359 /* RockPaperScissorsAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A62380E82A59A1DE00368359 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		A64C28872A5A1C300045ECAB /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				A62380C62A598FD600368359 /* Info.plist */,
 				A62380E82A59A1DE00368359 /* Game.swift */,
 				A604BDF02A5A0E7E00FC1884 /* Score.swift */,
+				A64C28872A5A1C300045ECAB /* GlobalVariables.swift */,
 			);
 			path = RockPaperScissorsApp;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A64C28882A5A1C300045ECAB /* GlobalVariables.swift in Sources */,
 				A62380BD2A598FD400368359 /* ViewController.swift in Sources */,
 				A62380B92A598FD400368359 /* AppDelegate.swift in Sources */,
 				A62380BB2A598FD400368359 /* SceneDelegate.swift in Sources */,

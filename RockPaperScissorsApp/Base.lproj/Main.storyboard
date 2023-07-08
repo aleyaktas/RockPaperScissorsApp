@@ -30,14 +30,14 @@
                                 <rect key="frame" x="177" y="281.66666666666669" width="216" height="89"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycO-kd-ayF">
-                                <rect key="frame" x="119.66666666666667" y="763.66666666666663" width="153.66666666666663" height="34.333333333333371"/>
+                                <rect key="frame" x="107.00000000000001" y="759.66666666666663" width="179.33333333333337" height="38.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="START GAME">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <color key="strokeColor" systemColor="systemGreenColor"/>
                                     </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="24"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -88,14 +88,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zjp-zx-ZvK">
-                                <rect key="frame" x="144" y="714.66666666666663" width="105.33333333333331" height="34.333333333333371"/>
+                                <rect key="frame" x="133" y="710.66666666666663" width="127" height="38.333333333333371"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="ChOOse">
+                                <buttonConfiguration key="configuration" style="plain" title="ChOOSE">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <color key="strokeColor" systemColor="systemGreenColor"/>
                                     </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="24"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -103,7 +103,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="PdV-f9-ubT">
-                                <rect key="frame" x="49" y="566.66666666666663" width="295" height="140"/>
+                                <rect key="frame" x="49" y="562.66666666666663" width="295" height="140"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pu-uK-6za" userLabel="rock">
                                         <rect key="frame" x="0.0" y="0.0" width="93" height="140"/>
@@ -173,11 +173,12 @@
                         <outlet property="rock" destination="1pu-uK-6za" id="UAx-1K-h8c"/>
                         <outlet property="scissor" destination="Ter-5j-Zxa" id="1SF-LL-ft6"/>
                         <outlet property="userChooseImg" destination="XEY-3L-iNH" id="qcA-Fk-wGq"/>
+                        <segue destination="Ss6-45-j5L" kind="show" identifier="gameToScore" id="vq3-5l-JCX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lsz-bX-qL6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4918.320610687023" y="65.492957746478879"/>
+            <point key="canvasLocation" x="4653" y="-299"/>
         </scene>
         <!--Score-->
         <scene sceneID="qyS-2D-Kdk">
@@ -216,12 +217,29 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7C-IJ-veO">
+                                <rect key="frame" x="144.33333333333334" y="759" width="104.33333333333334" height="39"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="RESET">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <color key="strokeColor" systemColor="systemGreenColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="24"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="resetButtonAct:" destination="Ss6-45-j5L" eventType="touchUpInside" id="Qbs-na-kLl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="t7v-hp-gXm"/>
                         <color key="backgroundColor" red="0.32941177490000001" green="0.34509804840000002" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="w3D-7m-RBi" firstAttribute="top" secondItem="8SL-5d-mRy" secondAttribute="bottom" constant="40" id="7PX-KU-ACV"/>
                             <constraint firstItem="fh6-J4-Rwi" firstAttribute="top" secondItem="w3D-7m-RBi" secondAttribute="bottom" constant="40" id="LF3-pr-b8A"/>
+                            <constraint firstItem="H7C-IJ-veO" firstAttribute="centerX" secondItem="ap0-Ru-bKm" secondAttribute="centerX" id="VWX-Dv-UIh"/>
+                            <constraint firstItem="t7v-hp-gXm" firstAttribute="bottom" secondItem="H7C-IJ-veO" secondAttribute="bottom" constant="20" id="Yzd-gh-BGS"/>
                             <constraint firstItem="Tuq-7o-fnh" firstAttribute="centerX" secondItem="ap0-Ru-bKm" secondAttribute="centerX" id="ZvH-zU-I5j"/>
                             <constraint firstItem="w3D-7m-RBi" firstAttribute="centerY" secondItem="ap0-Ru-bKm" secondAttribute="centerY" id="auA-va-oe6"/>
                             <constraint firstItem="w3D-7m-RBi" firstAttribute="centerX" secondItem="ap0-Ru-bKm" secondAttribute="centerX" id="oIb-lP-9Rr"/>
@@ -232,10 +250,16 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Score" image="Score" selectedImage="Score" id="TES-GE-YHf"/>
                     <navigationItem key="navigationItem" id="Qub-ag-g7z"/>
+                    <connections>
+                        <outlet property="computerScoreText" destination="Tuq-7o-fnh" id="AyG-6g-kQo"/>
+                        <outlet property="status" destination="8SL-5d-mRy" id="qHf-wB-JzI"/>
+                        <outlet property="statusImg" destination="w3D-7m-RBi" id="fY8-ut-0t3"/>
+                        <outlet property="userScoreText" destination="fh6-J4-Rwi" id="Auk-Nl-uKb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VYZ-k6-Csg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5483.2061068702287" y="705.63380281690149"/>
+            <point key="canvasLocation" x="4653" y="458"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9hN-8i-7Rn">
@@ -262,6 +286,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Cg1-mP-ndN"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zKk-Mg-8YJ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -272,9 +297,12 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UdK-eH-65Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3991.6030534351144" y="65.492957746478879"/>
+            <point key="canvasLocation" x="3724" y="4"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="vq3-5l-JCX"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Background" width="413" height="408"/>
         <image name="Game" width="24" height="24"/>

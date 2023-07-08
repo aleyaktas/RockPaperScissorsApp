@@ -13,8 +13,6 @@ class Game: UIViewController {
 
     var timer: Timer?
     var runCount = 3
-    var userScore = 0
-    var computerScore = 0
 
     var computerChoose:String = ""
     var selectedOption: String = ""
@@ -37,6 +35,7 @@ class Game: UIViewController {
         rock.isHidden = !optionsVisible
         paper.isHidden = !optionsVisible
         scissor.isHidden = !optionsVisible
+
     }
     
     enum Status: String {
