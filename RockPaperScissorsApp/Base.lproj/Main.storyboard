@@ -162,12 +162,12 @@
                     <navigationItem key="navigationItem" title="Game" id="fFg-c3-Zqw"/>
                     <connections>
                         <outlet property="chooseButton" destination="Zjp-zx-ZvK" id="5bo-YS-8A5"/>
+                        <outlet property="computerChooseImg" destination="PTw-67-hNV" id="MWj-2j-eKZ"/>
                         <outlet property="counter" destination="n8d-P4-QZr" id="nZ9-q2-Fxh"/>
-                        <outlet property="imgtest" destination="PTw-67-hNV" id="3tN-MM-SLr"/>
-                        <outlet property="imgtest2" destination="XEY-3L-iNH" id="bdz-Sz-1ym"/>
                         <outlet property="paper" destination="wRF-WA-7gV" id="ArS-WQ-aCs"/>
                         <outlet property="rock" destination="1pu-uK-6za" id="UAx-1K-h8c"/>
                         <outlet property="scissor" destination="Ter-5j-Zxa" id="1SF-LL-ft6"/>
+                        <outlet property="userChooseImg" destination="XEY-3L-iNH" id="qcA-Fk-wGq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lsz-bX-qL6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -199,8 +199,8 @@
         <image name="IntroRight" width="216" height="89"/>
         <image name="Paper" width="69" height="93"/>
         <image name="Rock" width="69" height="76"/>
-        <image name="RockComputer" width="75" height="166"/>
-        <image name="RockUser" width="78" height="163.5"/>
+        <image name="RockComputer" width="150" height="332"/>
+        <image name="RockUser" width="142" height="327"/>
         <image name="Scissor" width="69" height="94"/>
         <systemColor name="secondarySystemGroupedBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
