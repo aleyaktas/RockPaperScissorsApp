@@ -16,6 +16,7 @@
 		A62380D02A598FD600368359 /* RockPaperScissorsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62380CF2A598FD600368359 /* RockPaperScissorsAppTests.swift */; };
 		A62380DA2A598FD600368359 /* RockPaperScissorsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62380D92A598FD600368359 /* RockPaperScissorsAppUITests.swift */; };
 		A62380DC2A598FD600368359 /* RockPaperScissorsAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62380DB2A598FD600368359 /* RockPaperScissorsAppUITestsLaunchTests.swift */; };
+		A62380E92A59A1DE00368359 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62380E82A59A1DE00368359 /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A62380D52A598FD600368359 /* RockPaperScissorsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RockPaperScissorsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A62380D92A598FD600368359 /* RockPaperScissorsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsAppUITests.swift; sourceTree = "<group>"; };
 		A62380DB2A598FD600368359 /* RockPaperScissorsAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A62380E82A59A1DE00368359 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				A62380C12A598FD600368359 /* Assets.xcassets */,
 				A62380C32A598FD600368359 /* LaunchScreen.storyboard */,
 				A62380C62A598FD600368359 /* Info.plist */,
+				A62380E82A59A1DE00368359 /* Game.swift */,
 			);
 			path = RockPaperScissorsApp;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				A62380BD2A598FD400368359 /* ViewController.swift in Sources */,
 				A62380B92A598FD400368359 /* AppDelegate.swift in Sources */,
 				A62380BB2A598FD400368359 /* SceneDelegate.swift in Sources */,
+				A62380E92A59A1DE00368359 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

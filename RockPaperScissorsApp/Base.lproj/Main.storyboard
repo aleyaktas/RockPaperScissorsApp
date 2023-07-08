@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sBU-iI-KBu">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,9 +20,9 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IntroLeft" translatesAutoresizingMaskIntoConstraints="NO" id="0qJ-Jx-D3q">
                                 <rect key="frame" x="0.0" y="484" width="234" height="84"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROCK PAPER SCİSSORS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gfp-w3-TOj">
-                                <rect key="frame" x="51" y="414" width="291" height="24.333333333333314"/>
-                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROCK PAPER SCISSORS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gfp-w3-TOj">
+                                <rect key="frame" x="20.666666666666657" y="411" width="352" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="29"/>
                                 <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -33,14 +34,14 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="START GAME">
                                     <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <color key="strokeColor" systemColor="systemGreenColor"/>
                                     </backgroundConfiguration>
                                     <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="14"/>
-                                    <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="jmE-3n-4rd" kind="show" id="bWU-VJ-l81"/>
+                                    <segue destination="jmE-3n-4rd" kind="show" id="hR4-19-Dfk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -61,33 +62,140 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1921.3740458015266" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="2848.0916030534349" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Game-->
         <scene sceneID="BQE-L5-Chc">
             <objects>
-                <viewController id="jmE-3n-4rd" sceneMemberID="viewController">
+                <viewController id="jmE-3n-4rd" customClass="Game" customModule="RockPaperScissorsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F5j-9V-8eR">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="iUg-un-p92">
+                                <rect key="frame" x="-10" y="222" width="413" height="408"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ReadyHandComputer" translatesAutoresizingMaskIntoConstraints="NO" id="PTw-67-hNV">
+                                <rect key="frame" x="0.0" y="103" width="393" height="257.66666666666669"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ReadyHandUser" translatesAutoresizingMaskIntoConstraints="NO" id="XEY-3L-iNH">
+                                <rect key="frame" x="0.0" y="520.66666666666663" width="393" height="297.33333333333337"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIGHT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8d-P4-QZr">
+                                <rect key="frame" x="111.00000000000001" y="397.66666666666669" width="171.33333333333337" height="56.666666666666686"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="56"/>
+                                <color key="textColor" red="0.94509804249999996" green="0.60000002379999995" blue="0.21960783" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zjp-zx-ZvK">
+                                <rect key="frame" x="156" y="769.66666666666663" width="81" height="28.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ChOOse">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <color key="strokeColor" systemColor="systemGreenColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="14"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="toggle:" destination="jmE-3n-4rd" eventType="touchUpInside" id="ewP-ew-w3L"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="PdV-f9-ubT">
+                                <rect key="frame" x="49" y="621.66666666666663" width="295" height="140"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pu-uK-6za">
+                                        <rect key="frame" x="0.0" y="0.0" width="93" height="140"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Rock" title=""/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wRF-WA-7gV">
+                                        <rect key="frame" x="101" y="0.0" width="93" height="140"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Paper" title="">
+                                            <backgroundConfiguration key="background"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ter-5j-Zxa">
+                                        <rect key="frame" x="202" y="0.0" width="93" height="140"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Scissor"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.24329987582781457" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="XsH-cr-XmE"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="onr-Ip-HXp"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.32941177490000001" green="0.34509804840000002" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="onr-Ip-HXp" firstAttribute="bottom" secondItem="Zjp-zx-ZvK" secondAttribute="bottom" constant="20" id="2Tb-WG-0T2"/>
+                            <constraint firstItem="iUg-un-p92" firstAttribute="centerY" secondItem="F5j-9V-8eR" secondAttribute="centerY" id="6z6-YK-i7p"/>
+                            <constraint firstItem="Zjp-zx-ZvK" firstAttribute="centerX" secondItem="F5j-9V-8eR" secondAttribute="centerX" id="7ml-t9-zz7"/>
+                            <constraint firstItem="PTw-67-hNV" firstAttribute="top" secondItem="onr-Ip-HXp" secondAttribute="top" id="AMa-3m-gIx"/>
+                            <constraint firstItem="onr-Ip-HXp" firstAttribute="bottom" secondItem="XEY-3L-iNH" secondAttribute="bottom" id="CF0-aG-1Bm"/>
+                            <constraint firstItem="XEY-3L-iNH" firstAttribute="height" secondItem="onr-Ip-HXp" secondAttribute="height" multiplier="0.5" constant="-60" id="Gq6-3K-mbx"/>
+                            <constraint firstItem="PTw-67-hNV" firstAttribute="centerX" secondItem="F5j-9V-8eR" secondAttribute="centerX" id="SUd-zh-6oj"/>
+                            <constraint firstItem="iUg-un-p92" firstAttribute="centerX" secondItem="F5j-9V-8eR" secondAttribute="centerX" id="YUL-A6-ins"/>
+                            <constraint firstItem="XEY-3L-iNH" firstAttribute="centerX" secondItem="F5j-9V-8eR" secondAttribute="centerX" id="Z2W-73-F4i"/>
+                            <constraint firstItem="PdV-f9-ubT" firstAttribute="centerX" secondItem="F5j-9V-8eR" secondAttribute="centerX" id="f1I-hU-0AJ"/>
+                            <constraint firstItem="n8d-P4-QZr" firstAttribute="centerY" secondItem="F5j-9V-8eR" secondAttribute="centerY" id="fAU-as-h6b"/>
+                            <constraint firstItem="Zjp-zx-ZvK" firstAttribute="top" secondItem="PdV-f9-ubT" secondAttribute="bottom" constant="8" id="gfQ-hQ-2hY"/>
+                            <constraint firstItem="PTw-67-hNV" firstAttribute="height" secondItem="onr-Ip-HXp" secondAttribute="height" multiplier="0.5" constant="-100" id="hfj-fJ-Ef7"/>
+                            <constraint firstItem="n8d-P4-QZr" firstAttribute="centerX" secondItem="F5j-9V-8eR" secondAttribute="centerX" id="hfy-nW-lNj"/>
+                            <constraint firstItem="PTw-67-hNV" firstAttribute="width" secondItem="onr-Ip-HXp" secondAttribute="width" id="p1P-mQ-7Fp"/>
+                            <constraint firstItem="XEY-3L-iNH" firstAttribute="width" secondItem="onr-Ip-HXp" secondAttribute="width" id="r8y-U3-ER7"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="fFg-c3-Zqw"/>
+                    <navigationItem key="navigationItem" title="Game" id="fFg-c3-Zqw"/>
+                    <connections>
+                        <outlet property="bir" destination="1pu-uK-6za" id="T95-9O-jPT"/>
+                        <outlet property="buttonStack" destination="PdV-f9-ubT" id="kcu-zB-sR6"/>
+                        <outlet property="chooseButton" destination="Zjp-zx-ZvK" id="5bo-YS-8A5"/>
+                        <outlet property="iki" destination="wRF-WA-7gV" id="CG8-GP-NBS"/>
+                        <outlet property="uc" destination="Ter-5j-Zxa" id="Sxt-XN-w3F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lsz-bX-qL6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2733.5877862595421" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="3631.2977099236641" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9hN-8i-7Rn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sBU-iI-KBu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="p7e-ij-on9">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="v6a-Of-ENl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ByC-gn-86K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1921.3740458015266" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Background" width="413" height="408"/>
         <image name="IntroLeft" width="234" height="84"/>
         <image name="IntroRight" width="216" height="89"/>
+        <image name="Paper" width="69" height="93"/>
+        <image name="ReadyHandComputer" width="75" height="166"/>
+        <image name="ReadyHandUser" width="78" height="163.5"/>
+        <image name="Rock" width="69" height="76"/>
+        <image name="Scissor" width="69" height="94"/>
         <systemColor name="secondarySystemGroupedBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
