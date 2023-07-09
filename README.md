@@ -6,7 +6,6 @@ The user chooses one of the rock, paper and scissorrs by pressing the select key
 
 ## Application video
 
-https://github.com/aleyaktas/RockPaperScissorsApp/assets/76265779/d2a31880-a929-4aa1-8eb5-91ca44c71b29
-
+https://github.com/aleyaktas/RockPaperScissorsApp/assets/76265779/823a6298-df8b-4e66-bfaa-a55213179bf8
 
 
